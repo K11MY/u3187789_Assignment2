@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: skyblue;
+}
+
+nav ul {
+  display: flex;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1rem
+}
+
+nav ul li {
+  display: flex;
+}
+
+section#home {
+  background-image: url('/img/churchill-house-1.jpg') no-repeat;
+}
