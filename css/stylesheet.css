@@ -73,26 +73,123 @@ section h1 {
 
 section p {
   font-size: 1.5rem;
-  color: black;
+  color: white;
 }
 
 section#home {
-  background-image: url('/img/churchill-house-1.jpg');
+  background-image: url('/img/churchill-house-39.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+section#home .main button {
+  margin-top: 1rem; 
+}
+
+section#home .button {
+  margin-top: 2rem;
+}
+section#home .button a {
+  background-color: skyblue;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+section#home .button a:hover {
+  background-color: rgb(120, 167, 168);
+  color: antiquewhite;
 
 }
 
 section#history {
-  background-image: url('/img/churchill-house-5.png');
+  background-image: url('/img/churchill-house-24.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 
+}
+section#history .button {
+  margin-top: 2rem;
+}
+section#history .button a {
+  background-color: skyblue;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+section#history .button a:hover {
+  background-color: rgb(120, 167, 168);
+  color: antiquewhite;
 }
 
 section#signifiance {
   background-image: url('/img/churchill-house-25.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#signifiance .button {
+  margin-top: 2rem;
+}
+section#signifiance .button a {
+  background-color: skyblue;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+section#signifiance .button a:hover {
+  background-color: rgb(120, 167, 168);
+  color: antiquewhite;
 
 }
-
 section#photo {
   background-image: url('/img/churchill-house-47.jpg');
-  opacity: 0.4;
 
+}
+section#photo .button {
+  margin-top: 2rem;
+}
+section#photo .button a {
+  background-color: skyblue;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+section#photo .button a:hover {
+  background-color: rgb(120, 167, 168);
+  color: antiquewhite;
+
+}
+mark {
+  background-color: skyblue;
+  color: white;
+  
+}
+
+@media (max-width:600px) {
+  .logo {
+      display: none;
+      flex-direction: column;
+
+  }
+  .navbar {
+    display: none;
+  }
+
+section h1 {
+  font-size: 2rem;
+}
+
+section p {
+  font-size: 1rem;
+  color: white;
+}
 }
