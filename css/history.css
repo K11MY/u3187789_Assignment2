@@ -1,7 +1,8 @@
+/* Other */
 :root {
   --primary-color: #c72727;
-  --secondary-color: #f99500;
-  --light-color: #f2f2f2;
+  --secondary-color: #d3ab9e;
+  --light-color: #efe5dc;
   --dark-color: #333;
   --max-width: 1100px;
 }
@@ -10,15 +11,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .title {
   padding: 0.5rem;
   margin-bottom: 2rem;
-  border-top: 2px solid #cccccc;
-  border-bottom:2px solid #cccccc;
+  border-top: 2px solid #d3ab9e;
+  border-bottom:2px solid #d3ab9e;
 }
-/*  Utilities  */
+
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -27,6 +29,7 @@
   background-color: var(--light-color);
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
   display: flex;
@@ -75,6 +78,7 @@
 .logo a:visited {
   color: var(--dark-color);
 }
+
 /* Create two unequal columns that floats next to each other */
 .row {
   margin-top: 1rem;
@@ -87,6 +91,8 @@
 
 .column-left ul {
   margin-left: 2rem;
+  padding-left: ;
+  list-style-type: "→";
 }
 
 .column-right {
@@ -100,6 +106,39 @@
   margin: 1rem;
 }
 
+.parrallax-1 {
+  background: url(../img/robin.jpg) no-repeat center;
+  background-size:  cover;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.parrallax-2 {
+  background: url(../img/churchill-house-4.jpg) no-repeat center;
+  background-size:  cover;
+  background-attachment: fixed;
+  height: 300px;
+}
+.parrallax-3 {
+  background: url(../img/churchill-house-13.jpg) no-repeat center;
+  background-size:  cover;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.picture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+  grid-row-gap: 0px;
+}
+
+.grid-box img {
+  width: 100%;
+  height: 400px;
+}
+/* Media Query aimed at mobile devices */
 @media (max-width: 900px) {
   .row {
     flex-direction: column;

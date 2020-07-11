@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
@@ -69,7 +70,7 @@ body {
   color: var(--dark-color);
 }
 
-/* Section Home */
+/* Section */
 
 section {
   display: flex;
@@ -95,24 +96,33 @@ section p {
   color: var(--dark-color);
 }
 
-section#home p {
+section ul {
+    list-style-type: "→";
+}
+
+/* Section bg colours */
+section#description p {
   color: var(--dark-color);
 }
 /* Section Building */
 
-section#history {
+section#main {
   background-color: #d0b8ac;
 }
 
-section#signifiance {
+section#northwing {
   background-color: #f3d8c7;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 section#analysis {
   background-color: #fbfefb;
+}
+
+section#analysis .text ul {
+    font-size: 1rem;
+    padding-left: 1.5rem;
 }
 
 
@@ -127,7 +137,9 @@ img {
 }
 
 /* Media Query */
-@media (max-width: 730px) {
+
+/* Phone */
+@media (max-width: 630px) {
   .navbar {
     position: relative;
     margin-bottom: 2rem;
@@ -145,148 +157,159 @@ img {
     font-size: 2rem;
   }
 
-  section#home {
+  section#description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-  section#home h1 {
+  section#description h1 {
     font-size: 2rem;
   }
 
-  section#home .text {
+  section#description .text {
     padding-right: 10px;
     justify-content: center;
     font-size: 2rem;
   }
 
-  section#home img {
+  section#description img {
     max-width: 300px;
   }
 
-  section#history img {
+  section#main img {
     max-width: 300px;
   }
 
-  section#signifiance img {
+  section#northwing img {
     max-width: 300px;
   }
 
   section#facilities img {
     max-width: 300px;
   }
-}
+  section#analysis img {
+    max-width: 300px;
+  }
 
-@media (min-width: 745px) {
-  section#home {
+}
+/* Tablets */
+@media (min-width: 700px) {
+  section#description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-  section#home h1 {
+  section#description h1 {
     font-size: 2rem;
   }
 
-  section#home .text {
+  section#description .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#home img {
+  section#description img {
     max-width: 400px;
   }
-  section#history {
+  section#main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-  section#history h1 {
+  section#main h1 {
     font-size: 2rem;
   }
 
-  section#history .text {
+  section#main .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#history img {
+  section#main img {
     max-width: 400px;
   }
 
-  section#signifiance img {
+  section#northwing img {
+    max-width: 400px;
+  }
+
+  section#facilities img {
+    max-width: 400px;
+  }
+
+  section#analysis img {
     max-width: 400px;
   }
 
 }
-
+/* Webpages */
 @media (min-width: 1000px) {
-  section#home {
+  section#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px;
   }
-  section#home h1 {
+  section#description h1 {
     font-size: 4rem;
   }
 
-  section#home .text {
+  section#description .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#home img {
+  section#description img {
     max-width: 500px;
   }
 
-  section#history {
+  section#main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
   }
-  section#history h1 {
+  section#main h1 {
     font-size: 4rem;
   }
 
-  section#history .text {
+  section#main .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#history img {
+  section#main img {
     max-width: 500px;
   }
 
-  section#signifiance {
+  section#northwing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
   }
-  section#signifiance h1 {
+  section#northwing h1 {
     font-size: 4rem;
   }
 
-  section#signifiance .text {
+  section#northwing .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#signifiance img {
+  section#northwing img {
     max-width: 500px;
   }
 
@@ -301,14 +324,35 @@ img {
     font-size: 4rem;
   }
 
-  section#facilities .text {
+  section#analysis .text {
     padding-right: 10px;
     justify-content: center;
     text-align: left;
     font-size: 2rem;
   }
 
-  section#facilities img {
+  section#analysis img {
+    max-width: 500px;
+  }
+  /*  */
+  section#analysis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+  section#analysis h1 {
+    font-size: 4rem;
+  }
+
+  section#analysis .text {
+    padding-right: 10px;
+    justify-content: center;
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  section#analysis img {
     max-width: 500px;
   }
 

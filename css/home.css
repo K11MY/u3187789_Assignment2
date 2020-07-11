@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 :root {
     --primary-color: #c72727;
-    --secondary-color: #f99500;
+    --secondary-color: #d3ab9e;
     --light-color: #f2f2f2;
     --dark-color: #333;
     --max-width: 1100px;
@@ -26,6 +27,8 @@ body {
   height: 100%;
   /* Smooth scroll properties */
 }
+
+/* Navigation  */
 
 .navbar {
   top: 0;
@@ -54,6 +57,7 @@ body {
   text-decoration: none;
   margin: 0 0.5rem;
   padding: 1rem;
+  font-weight: bolder;
 }
 
 .navbar ul li a {
@@ -63,14 +67,13 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: black;
+  color: var(--secondary-color);
 }
 .navbar ul li a:visited {
   color: var(--dark-color);
 }
 
-
-
+/* Section */
 section {
   display: flex;
   flex-direction: column;
@@ -89,7 +92,16 @@ section p {
   font-size: 1.5rem;
   color: white;
 }
+/* Landing Section */
+section#landing {
+  background-color: var(--light-color);
+}
 
+section#landing p {
+  color: var(--dark-color);
+  padding: 10px;
+}
+/* Home section */
 section#home {
   background-image: url("/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
@@ -104,7 +116,7 @@ section#home .button {
   margin-top: 2rem;
 }
 section#home .button a {
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
   color: var(--dark-color);
   padding: 1rem;
   text-decoration: none;
@@ -116,7 +128,7 @@ section#home .button a:hover {
   background-color:var(--dark-color);
   color: antiquewhite;
 }
-
+/* History section */
 section#history {
   background-image: url("/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
@@ -126,7 +138,7 @@ section#history .button {
   margin-top: 2rem;
 }
 section#history .button a {
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
   color: var(--dark-color);
   padding: 1rem;
   text-decoration: none;
@@ -138,19 +150,30 @@ section#history .button a:hover {
   color: antiquewhite;
 }
 
+/* Section Signifance */
 section#signifiance {
   background-image: url("/img/churchill-house-25.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+section#signifiance ul {
+  list-style-type: "→";
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+}
 section#signifiance ul {
   color: white;
+}
+section#signifiance ul li{
+  margin:1rem;
 }
 section#signifiance .button {
   margin-top: 2rem;
 }
 section#signifiance .button a {
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
   color: var(--dark-color);
   padding: 1rem;
   text-decoration: none;
@@ -162,6 +185,7 @@ section#signifiance .button a:hover {
   color: antiquewhite;
 }
 
+/* Section Photo */
 section#photo {
   background-image: url("/img/churchill-house-47.jpg");
 }
@@ -169,7 +193,7 @@ section#photo .button {
   margin-top: 2rem;
 }
 section#photo .button a {
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
   color: var(--dark-color);
   padding: 1rem;
   text-decoration: none;
@@ -185,9 +209,11 @@ mark {
   color: var(--dark-color);
 }
 
+
+/* Media Query for phone */
 @media (max-width: 730px) {
   .logo {
-    align-items: ce;
+    align-items: center
   }
   .navbar ul {
     display: none;
@@ -200,5 +226,9 @@ mark {
   section p {
     font-size: 1rem;
     color: white;
+  }
+  
+  section#signifiance ul li{
+    font-size: 1rem;
   }
 }
