@@ -79,7 +79,7 @@
   color: var(--dark-color);
 }
 
-/* Create two unequal columns that floats next to each other */
+/* History page - Created two columns */
 .row {
   margin-top: 1rem;
   display: flex;
@@ -106,6 +106,7 @@
   margin: 1rem;
 }
 
+/* Parrallax for Robin Boyd Page */
 .parrallax-1 {
   background: url(../img/robin.jpg) no-repeat center;
   background-size:  cover;
@@ -125,7 +126,7 @@
   background-attachment: fixed;
   height: 300px;
 }
-
+/* Photo Gallery Page */
 .picture-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -138,6 +139,7 @@
   width: 100%;
   height: 400px;
 }
+
 /* Media Query aimed at mobile devices */
 @media (max-width: 900px) {
   .row {
