@@ -72,7 +72,7 @@
     margin: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width:900px) {
     .row {
         flex-direction: column;
     }
@@ -80,7 +80,7 @@
         width: 100%;
     }
     .column-right {
-       align-self self;
+       align-self: self;
         width: 100%;
     }
 

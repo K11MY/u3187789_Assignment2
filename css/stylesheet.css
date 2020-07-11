@@ -77,14 +77,13 @@ section p {
 }
 
 section#home {
-  background-image: url('/img/churchill-house-39.jpg');
+  background-image: url("/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 section#home .main button {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 section#home .button {
@@ -102,14 +101,12 @@ section#home .button a {
 section#home .button a:hover {
   background-color: rgb(120, 167, 168);
   color: antiquewhite;
-
 }
 
 section#history {
-  background-image: url('/img/churchill-house-24.jpg');
+  background-image: url("/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 section#history .button {
   margin-top: 2rem;
@@ -128,7 +125,7 @@ section#history .button a:hover {
 }
 
 section#signifiance {
-  background-image: url('/img/churchill-house-25.jpg');
+  background-image: url("/img/churchill-house-25.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -146,11 +143,9 @@ section#signifiance .button a {
 section#signifiance .button a:hover {
   background-color: rgb(120, 167, 168);
   color: antiquewhite;
-
 }
 section#photo {
-  background-image: url('/img/churchill-house-47.jpg');
-
+  background-image: url("/img/churchill-house-47.jpg");
 }
 section#photo .button {
   margin-top: 2rem;
@@ -166,30 +161,26 @@ section#photo .button a {
 section#photo .button a:hover {
   background-color: rgb(120, 167, 168);
   color: antiquewhite;
-
 }
 mark {
   background-color: skyblue;
   color: white;
-  
 }
 
-@media (max-width:600px) {
+@media (max-width: 730px) {
   .logo {
-      display: none;
-      flex-direction: column;
-
+    align-items: center;
   }
-  .navbar {
+  .navbar ul {
     display: none;
   }
 
-section h1 {
-  font-size: 2rem;
-}
+  section h1 {
+    font-size: 2rem;
+  }
 
-section p {
-  font-size: 1rem;
-  color: white;
-}
+  section p {
+    font-size: 1rem;
+    color: white;
+  }
 }
