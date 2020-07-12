@@ -43,25 +43,6 @@ body {
   opacity: 0.7;
 }
 
-.logo {
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-}
-
-.logo a {
-  text-decoration: none;
-  color: var(--dark-color);
-}
-
-.logo a:hover {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.logo a:visited {
-  color: var(--dark-color);
-}
-
 .navbar ul {
   display: flex;
   list-style: none;
@@ -87,7 +68,27 @@ body {
   color: var(--dark-color);
 }
 
-/* Section */
+/* Navigation Logo  */
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.logo a:visited {
+  color: var(--dark-color);
+}
+
+/* General Section */
 section {
   display: flex;
   flex-direction: column;
@@ -106,7 +107,7 @@ section p {
   font-size: 1.5rem;
   color: white;
 }
-/* Landing Section */
+/* Section Landing */
 section#landing {
   background-color: var(--light-color);
 }
@@ -115,7 +116,7 @@ section#landing p {
   color: var(--dark-color);
   padding: 10px;
 }
-/* Home section */
+/* Section Home */
 section#home {
   background-image: url("/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
@@ -142,7 +143,7 @@ section#home .button a:hover {
   background-color: var(--dark-color);
   color: antiquewhite;
 }
-/* History section */
+/* Section History */
 section#history {
   background-image: url("/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
@@ -164,7 +165,7 @@ section#history .button a:hover {
   color: antiquewhite;
 }
 
-/* Section Signifance */
+/* Section Signifiance */
 section#signifiance {
   background-image: url("/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
@@ -181,6 +182,14 @@ section#signifiance ul {
 }
 section#signifiance ul li {
   margin: 1rem;
+}
+/* List items in Signifiance */
+.list ul {
+  margin-left: 2rem;
+  list-style-type: "→";
+}
+.list ul li {
+  padding-left: 1rem;
 }
 
 /* Section Photo */
@@ -207,6 +216,7 @@ mark {
   color: var(--dark-color);
 }
 
+/* Section Footer */
 section#footer {
   display: flex;
   flex-direction: column;

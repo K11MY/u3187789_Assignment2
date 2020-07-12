@@ -98,6 +98,11 @@
 .column-right {
   flex: 25%;
   align-items: center;
+  justify-content: center;
+}
+
+.column-right h2 {
+  text-align: center;
 }
 
 .column-right img {
@@ -107,24 +112,31 @@
 }
 
 /* Parrallax for Robin Boyd Page */
-.parrallax-1 {
+.parallax-1 {
   background: url(../img/robin.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }
 
-.parrallax-2 {
+.parallax-2 {
   background: url(../img/churchill-house-4.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }
-.parrallax-3 {
+.parallax-3 {
   background: url(../img/churchill-house-13.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
+}
+.list ul {
+  margin-left: 2rem;
+  list-style-type: "→";
+}
+.list ul li {
+  padding-left: 1rem;
 }
 /* Photo Gallery Page */
 .picture-grid {
