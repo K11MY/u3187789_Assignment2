@@ -81,7 +81,6 @@
 
 /* History page - Created two columns */
 .row {
-  margin-top: 1rem;
   display: flex;
 }
 
@@ -142,6 +141,17 @@
 
 /* Media Query aimed at mobile devices */
 @media (max-width: 900px) {
+  .container {
+    position: relative;
+    padding-top: 4rem;
+  }
+  .navbar {
+    position: fixed;
+    top: 0em;
+    background-color: var(--light-color);
+    opacity: 0.75;
+    min-height: 0.5vh;
+  }
   .row {
     flex-direction: column;
   }
