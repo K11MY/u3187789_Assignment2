@@ -48,6 +48,14 @@ body {
   letter-spacing: 0.5rem;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+.logo a:visited {
+  color: var(--dark-color);
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -152,7 +160,7 @@ section#history .button a:hover {
 
 /* Section Signifance */
 section#signifiance {
-  background-image: url("/img/churchill-house-25.jpg");
+  background-image: url("/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -194,6 +202,13 @@ mark {
   color: var(--dark-color);
 }
 
+section#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--light-color);
+
+}
 
 /* Media Query for phone */
 @media (max-width: 730px) {
@@ -215,5 +230,10 @@ mark {
   
   section#signifiance ul li{
     font-size: 1rem;
+  }
+
+  .caption img {
+    width: 300px;
+    height: 100px;
   }
 }
