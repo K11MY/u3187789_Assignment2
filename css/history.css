@@ -11,14 +11,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .title {
   padding: 0.5rem;
   margin-bottom: 2rem;
   border-top: 2px solid #d3ab9e;
-  border-bottom:2px solid #d3ab9e;
+  border-bottom: 2px solid #d3ab9e;
 }
 
 .container {
@@ -52,13 +52,14 @@
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
+  color: var(--dark-color);
 }
 .navbar ul li a:visited {
-  color: var(--dark-color)
-} 
+  color: var(--dark-color);
+}
 
 .navbar ul li a:hover {
-  color: #595959;
+  color: var(--secondary-color);
 }
 
 .logo {
@@ -68,12 +69,12 @@
 }
 
 .logo a:hover {
-  color:  #595959;
+  color: var(--secondary-color);
 }
 
 .logo a {
   text-decoration: none;
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 .logo a:visited {
   color: var(--dark-color);
@@ -108,20 +109,20 @@
 /* Parrallax for Robin Boyd Page */
 .parrallax-1 {
   background: url(../img/robin.jpg) no-repeat center;
-  background-size:  cover;
+  background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }
 
 .parrallax-2 {
   background: url(../img/churchill-house-4.jpg) no-repeat center;
-  background-size:  cover;
+  background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }
 .parrallax-3 {
   background: url(../img/churchill-house-13.jpg) no-repeat center;
-  background-size:  cover;
+  background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }

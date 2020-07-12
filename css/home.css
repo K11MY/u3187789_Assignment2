@@ -2,16 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --primary-color: #c72727;
-    --secondary-color: #d3ab9e;
-    --light-color: #f2f2f2;
-    --dark-color: #333;
-    --max-width: 1100px;
-  }
+  --primary-color: #c72727;
+  --secondary-color: #d3ab9e;
+  --light-color: #f2f2f2;
+  --dark-color: #333;
+  --max-width: 1100px;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +39,7 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 0.5vh;
-  background-color:var(--light-color);
+  background-color: var(--light-color);
   opacity: 0.7;
 }
 
@@ -50,6 +50,12 @@ body {
 
 .logo a {
   text-decoration: none;
+  color: var(--dark-color);
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: var(--secondary-color);
 }
 
 .logo a:visited {
@@ -133,7 +139,7 @@ section#home .button a {
 }
 
 section#home .button a:hover {
-  background-color:var(--dark-color);
+  background-color: var(--dark-color);
   color: antiquewhite;
 }
 /* History section */
@@ -154,7 +160,7 @@ section#history .button a {
   border-radius: 0.5rem;
 }
 section#history .button a:hover {
-  background-color:var(--dark-color);
+  background-color: var(--dark-color);
   color: antiquewhite;
 }
 
@@ -169,13 +175,12 @@ section#signifiance ul {
   list-style-type: "→";
   font-size: 1.5rem;
   margin-top: 1rem;
-
 }
 section#signifiance ul {
   color: white;
 }
-section#signifiance ul li{
-  margin:1rem;
+section#signifiance ul li {
+  margin: 1rem;
 }
 
 /* Section Photo */
@@ -194,7 +199,7 @@ section#photo .button a {
   border-radius: 0.5rem;
 }
 section#photo .button a:hover {
-  background-color:var(--dark-color);
+  background-color: var(--dark-color);
   color: antiquewhite;
 }
 mark {
@@ -207,13 +212,12 @@ section#footer {
   flex-direction: column;
   justify-content: space-evenly;
   background-color: var(--light-color);
-
 }
 
 /* Media Query for phone */
 @media (max-width: 800px) {
   .logo {
-    align-items: center
+    align-items: center;
   }
   .navbar ul {
     display: none;
@@ -227,8 +231,8 @@ section#footer {
     font-size: 1rem;
     color: white;
   }
-  
-  section#signifiance ul li{
+
+  section#signifiance ul li {
     font-size: 1rem;
   }
 
