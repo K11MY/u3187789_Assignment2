@@ -162,5 +162,10 @@
   .column-right {
     align-self: self;
     width: 100%;
+    justify-content: center;
+  }
+  .column-right img {
+    width: 300px;
+    height: 300px;
   }
 }

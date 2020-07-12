@@ -228,7 +228,7 @@ section#footer {
   }
 
   section p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: white;
   }
 
@@ -237,7 +237,7 @@ section#footer {
   }
 
   .caption img {
-    width: 400px;
+    width: 250px;
     height: 100px;
   }
 }
