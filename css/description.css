@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
@@ -92,12 +92,8 @@ section p {
   color: var(--dark-color);
 }
 
-section p {
-  color: var(--dark-color);
-}
-
 section ul {
-    list-style-type: "→";
+  list-style-type: "→";
 }
 
 /* Section bg colours */
@@ -121,10 +117,13 @@ section#analysis {
 }
 
 section#analysis .text ul {
-    font-size: 1rem;
-    padding-left: 1.5rem;
+  font-size: 1rem;
+  padding-left: 1.5rem;
 }
 
+section#analysis .text li {
+  list-style-type: "→";
+}
 
 /* Others */
 mark {
@@ -133,7 +132,7 @@ mark {
 }
 
 img {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 /* Media Query */
@@ -191,7 +190,6 @@ img {
   section#analysis img {
     max-width: 300px;
   }
-
 }
 
 @media (max-width: 930px) {
@@ -263,7 +261,6 @@ img {
   section#analysis img {
     max-width: 400px;
   }
-
 }
 /* Webpages */
 @media (min-width: 1000px) {
@@ -371,6 +368,4 @@ img {
   section#analysis img {
     max-width: 500px;
   }
-
 }
-

@@ -15,8 +15,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: grey;
-  color: var(--dark-color);
+  background-color: var(--light-color);
   line-height: 1.6;
   height: 100vh;
 }
@@ -107,6 +106,10 @@ section p {
   font-size: 1.5rem;
   color: white;
 }
+section ul li {
+  list-style-type: "→";
+  padding-left: 1rem;
+}
 /* Section Landing */
 section#landing {
   background-color: var(--light-color);
@@ -165,25 +168,25 @@ section#history .button a:hover {
   color: antiquewhite;
 }
 
-/* Section Signifiance */
-section#signifiance {
+/* Section Significance */
+section#significance {
   background-image: url("/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section#signifiance ul {
+section#significance ul {
   list-style-type: "→";
   font-size: 1.5rem;
   margin-top: 1rem;
 }
-section#signifiance ul {
+section#significance ul {
   color: white;
 }
-section#signifiance ul li {
+section#significance ul li {
   margin: 1rem;
 }
-/* List items in Signifiance */
+/* List items in significance */
 .list ul {
   margin-left: 2rem;
   list-style-type: "→";
@@ -224,10 +227,53 @@ section#footer {
   background-color: var(--light-color);
 }
 
+/*  Description Page */
+section .text p {
+  color: var(--dark-color);
+  text-align: left;
+}
+
+section .text h1 {
+  color: var(--dark-color);
+  text-align: left;
+}
+
+section#description {
+  background-color: #efe5dc;
+}
+
+section#main {
+  background-color: #d0b8ac;
+}
+
+section#northwing {
+  background-color: #f3d8c7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#facilities {
+  background-color: #efe5dc;
+}
+
+section#analysis {
+  background-color: #fbfefb;
+}
+
+section#analysis .text ul {
+  font-size: 1.5rem;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+img {
+  margin: 1rem;
+}
+
 /* Media Query for phone */
 @media (max-width: 800px) {
   .logo {
-    align-items: center;
+    text-align: center;
   }
   .navbar ul {
     display: none;
@@ -242,12 +288,237 @@ section#footer {
     color: white;
   }
 
-  section#signifiance ul li {
+  section#significance ul li {
     font-size: 1rem;
   }
 
   .caption img {
     width: 250px;
     height: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    position: relative;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  section#description h1 {
+    font-size: 2rem;
+  }
+
+  section#description .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#description img {
+    max-width: 300px;
+  }
+
+  section#main img {
+    max-width: 300px;
+  }
+
+  section#northwing img {
+    max-width: 300px;
+  }
+
+  section#facilities img {
+    max-width: 300px;
+  }
+  section#analysis img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 930px) {
+  .navbar {
+    position: relative;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width: 700px) {
+  section#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  section#description h1 {
+    font-size: 2rem;
+  }
+
+  section#description .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#description img {
+    max-width: 400px;
+  }
+  section#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+  section#main h1 {
+    font-size: 2rem;
+  }
+
+  section#main .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#main img {
+    max-width: 400px;
+  }
+
+  section#northwing img {
+    max-width: 400px;
+  }
+
+  section#facilities img {
+    max-width: 400px;
+  }
+
+  section#analysis img {
+    max-width: 400px;
+  }
+}
+/* Webpages */
+@media (min-width: 1000px) {
+  section#description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section#description h1 {
+    font-size: 4rem;
+  }
+
+  section#description .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#description img {
+    max-width: 500px;
+  }
+
+  section#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+  section#main h1 {
+    font-size: 4rem;
+  }
+
+  section#main .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#main img {
+    max-width: 500px;
+  }
+
+  section#northwing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+  section#northwing h1 {
+    font-size: 4rem;
+  }
+
+  section#northwing .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#northwing img {
+    max-width: 500px;
+  }
+
+  /*  */
+  section#facilities {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+  section#facilities h1 {
+    font-size: 4rem;
+  }
+
+  section#analysis .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#analysis img {
+    max-width: 500px;
+  }
+  /*  */
+  section#analysis {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+  }
+  section#analysis h1 {
+    font-size: 4rem;
+  }
+
+  section#analysis .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section#analysis img {
+    max-width: 500px;
   }
 }
