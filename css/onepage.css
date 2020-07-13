@@ -347,7 +347,7 @@ img {
   }
 
   section ul li {
-    font-size: 0.7rem;
+    font-size: 0.4rem;
   }
 
   section {
@@ -379,16 +379,13 @@ img {
 
 @media (max-width: 930px) {
   .navbar {
-    position: relative;
+    position: fixed;
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
   }
   .navbar ul {
-    flex-direction: column;
-  }
-  .logo {
-    display: none;
+    flex-direction: row;
   }
   section#significance ul li {
     font-size: 1rem;
@@ -403,6 +400,7 @@ img {
     justify-content: center;
     padding: 10px;
   }
+
   section h1 {
     font-size: 1.5rem;
   }
