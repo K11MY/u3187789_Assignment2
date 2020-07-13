@@ -1,6 +1,9 @@
 # u3187789_Assignment2 - Front End Web Design 
+### DISCLAIMER: I tried to make this reflection fun to write :) 
 
-## Reflection
+## Reflection 
+### (Insert Mulan Reflection for background music)
+
 Here is my reflection and my thought process throughout creating the website. 
 
 During this unit I was tasked to create my first responsive html and css page. Through using my inspiration board I have decided to create a one page scroll website for my main content. 
@@ -11,7 +14,7 @@ This decision also made it easier for me to design the website with the intent o
 
 ### Bumps on the Road (Challenges)
 
-#### 1: Ugh, Navigation Responsiveness
+#### 1: Ugh, Navigation Responsiveness-sssssssssssssssssssssssssssss
 Navigation media query was one the most annoying parts of the website to code up and ensuring that the navigation bar could cater to all devices of different types and sizes. Finding a way to make the navgation bar fit all the content that was needed was difficult. Especially for a one page scroll on my description.html. I knew it would be a pain for the user to not have a navigation menu or bar of some sort for the user to navigate through the content. They would spend too much time scrolling up and down the page. It took me a few tries to finally come up with an idea that I enyjoed.  
 
 #### Solution
@@ -23,8 +26,10 @@ I also actively asked friends to review my page and had their thoughts on what c
 When seeing all the content I was shocked. I had no idea what I wanted to do with it. How I wanted to lay it out and how would I make it work in terms of only showing content that was necessary to the user. I thought about which content went well together and which content just needed their own page. I decided to gather the history and robin boyd page together. I ran into another issue of how should I display this content? Should I use the same layout for both pages or make them different? 
 
 #### Solution
-Deciding to put Robin Boyd and History together just made sense to me and many users as Robin Boyd is apart of the history of churchill. I also decided to make the page as simple as possible where on tablet mode for history there are two columns to see the content and photos. While on mobile its a one page scroll. However, on my Robin Boyd page i decided to make paralax effect so the user was able to expereince something different on the page and not feel like it just another 'history' page. 
-
+Deciding to put Robin Boyd and History together just made sense to me and many users as Robin Boyd is apart of the history of churchill. I also decided to make the page as simple as possible where on tablet mode for history there are two columns to see the content and photos. While on mobile, it's a one page scroll. However, on my Robin Boyd page i decided to make paralax effect so the user was able to expereince something different on the page and not feel like it just another 'history' page. 
 
 #### 3:Media Query, Hello? Do you work? 
-I was constantly testing on all different devices a
+I was constantly testing on all different devices and sometimes I would get confused to why my content was not going to where it should be. I was raging, fuming and screaming. It was fustrating to see a bunch of css code written up and it not doing what it was supposed to be doing. 
+
+#### Solution
+From a little bit of background knowledge I decided to deploy this webpage on netlify so I could access it on my phone and iPad. This will then give me real expereince with how the website functions rather than seeing it through the computer screen (and hoping for the best). Through this deployment  I was able to send link to frineds for them to see and do continous deployment for all the changed I made. I was also able to visually see how my website was functioning on the mobile devices which gave me a great insight on what needed improving. 
