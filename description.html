@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300;1,500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
   </head>
   <body>
     <div class="container">
@@ -16,14 +17,17 @@
         <div class="logo">
           <h2>Churchill</h2>
         </div>
-        <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="#description">Description</a></li>
-          <li><a href="#main">Building</a></li>
-          <li><a href="#northwing">North Wing</a></li>
-          <li><a href="#facilities">Facilities</a></li>
-          <li><a href="#analysis">Analysis</a></li>
-        </ul>
+        <div class="nav-des">
+          <a name="top"></a>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="#description">Description</a></li>
+            <li><a href="#main">Building</a></li>
+            <li><a href="#northwing">North Wing</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#analysis">Analysis</a></li>
+          </ul>
+        </div>
       </nav>
       <!-- Nav Section -->
       <section id="description">
@@ -234,8 +238,10 @@
         </div>
       </section>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <a href="#" class="to-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   </body>
 </html>

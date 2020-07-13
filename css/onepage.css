@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   --primary-color: #c72727;
@@ -17,7 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--light-color);
   line-height: 1.6;
-  height: 100vh;
 }
 
 .container {
@@ -61,7 +63,7 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 .navbar ul li a:visited {
   color: var(--dark-color);
@@ -270,22 +272,47 @@ img {
   margin: 1rem;
 }
 
-/* Media Query for phone */
+/* Back to Top  */
+.to-top {
+  background: var(--light-color);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--dark-color);
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
 
-@media (max-width: 640px) {
-  section h1 {
-    font-size: 2rem;
-  }
+.to-top.active {
+  bottom: 2rem;
+  pointer-events: auto;
+  opacity: 1;
+}
 
-  section p {
-    font-size: 0.7rem;
-    color: white;
-  }
+/* Responsive Phone */
+@media (max-width: 690px) {
+  /* Navigation */
   .navbar {
     position: relative;
     margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
+  }
+
+  .navbar .nav-des {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
   }
   .navbar ul {
     flex-direction: column;
@@ -294,52 +321,59 @@ img {
     display: none;
   }
 
+  .navbar .homenav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: var(--light-color);
+    width: 100%;
+    justify-content: center;
+    height: 5vh;
+  }
+
+  .navbar .homenav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 0.65rem;
+  }
+
+  /* Section */
   section h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+  section p {
+    font-size: 0.7rem;
+    color: white;
   }
 
   section ul li {
     font-size: 0.7rem;
   }
 
-  .caption img {
-    width: 250px;
-    height: 100px;
-  }
-
-  section#description {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-  section#description h1 {
-    font-size: 2rem;
-  }
 
-  section#description .text {
-    padding-right: 10px;
+  section .text {
     justify-content: center;
-    font-size: 2rem;
+    padding: 0.3rem;
   }
 
-  section#description img {
-    max-width: 300px;
-  }
-
-  section#main img {
+  section img {
     max-width: 300px;
   }
 
-  section#northwing img {
-    max-width: 300px;
+  .button {
+    font-size: 0.5rem;
   }
 
-  section#facilities img {
-    max-width: 300px;
-  }
-  section#analysis img {
-    max-width: 300px;
+  /* Footer Image */
+  .caption img {
+    width: 250px;
+    height: 100px;
   }
 }
 
@@ -363,76 +397,49 @@ img {
 
 /* Tablets */
 @media (min-width: 700px) {
-  section#description {
+  section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-  section#description h1 {
-    font-size: 2rem;
+  section h1 {
+    font-size: 1.5rem;
   }
 
-  section#description .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
+  section p {
+    font-size: 1rem;
   }
 
-  section#description img {
-    max-width: 400px;
-  }
-  section#main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-  }
-  section#main h1 {
-    font-size: 2rem;
-  }
-
-  section#main .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#main img {
+  section img {
     max-width: 400px;
   }
 
-  section#northwing img {
-    max-width: 400px;
-  }
-
-  section#facilities img {
-    max-width: 400px;
-  }
-
-  section#analysis img {
-    max-width: 400px;
+  section ul li {
+    font-size: 1rem;
   }
 }
-/* Webpages */
+
+/* Computer  */
 @media (min-width: 1000px) {
+  section .text h1 {
+    font-size: 4rem;
+  }
+
+  section .text {
+    padding-right: 10px;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  section .img {
+    max-width: 500px;
+  }
+
   section#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  section#description h1 {
-    font-size: 4rem;
-  }
-
-  section#description .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#description img {
-    max-width: 500px;
   }
 
   section#main {
@@ -440,19 +447,6 @@ img {
     flex-direction: row;
     justify-content: center;
     padding: 50px;
-  }
-  section#main h1 {
-    font-size: 4rem;
-  }
-
-  section#main .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#main img {
-    max-width: 500px;
   }
 
   section#northwing {
@@ -461,58 +455,16 @@ img {
     justify-content: center;
     padding: 50px;
   }
-  section#northwing h1 {
-    font-size: 4rem;
-  }
-
-  section#northwing .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#northwing img {
-    max-width: 500px;
-  }
-
-  /*  */
   section#facilities {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
   }
-  section#facilities h1 {
-    font-size: 4rem;
-  }
-
-  section#analysis .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#analysis img {
-    max-width: 500px;
-  }
-  /*  */
   section#analysis {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
-  }
-  section#analysis h1 {
-    font-size: 4rem;
-  }
-
-  section#analysis .text {
-    padding-right: 10px;
-    justify-content: center;
-    font-size: 2rem;
-  }
-
-  section#analysis img {
-    max-width: 500px;
   }
 }
