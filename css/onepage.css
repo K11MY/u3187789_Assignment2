@@ -411,14 +411,9 @@ img {
     margin-bottom: 2rem;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
   }
-  .nav-des {
-    height: 100vh;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 15rem;
-  }
+
   .navbar ul {
     flex-direction: row;
   }
