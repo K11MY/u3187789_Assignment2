@@ -253,7 +253,6 @@ section#northwing {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 section#facilities {
   background-color: #efe5dc;
 }
@@ -261,7 +260,6 @@ section#facilities {
 section#analysis {
   background-color: #fbfefb;
 }
-
 section#analysis .text ul {
   font-size: 1.5rem;
   padding-left: 2.5rem;
@@ -307,20 +305,21 @@ img {
     justify-content: center;
     align-items: center;
   }
-
-  .navbar .nav-des {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15rem;
-  }
   .navbar ul {
     flex-direction: column;
   }
   .logo {
     display: none;
   }
+  /* Nav Description */
+  .navbar .nav-des {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+  }
 
+  /* Nav Home */
   .navbar .homenav {
     display: flex;
     position: fixed;
@@ -334,7 +333,7 @@ img {
   .navbar .homenav ul {
     flex-direction: row;
     justify-content: space-evenly;
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
 
   /* Section */
@@ -347,7 +346,7 @@ img {
   }
 
   section ul li {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
   }
 
   section {
@@ -377,30 +376,19 @@ img {
   }
 }
 
-@media (max-width: 930px) {
-  .navbar {
-    position: fixed;
-    margin-bottom: 2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .navbar ul {
-    flex-direction: row;
-  }
-  section#significance ul li {
-    font-size: 1rem;
-  }
-}
-
 /* Tablets */
 @media (min-width: 700px) {
+  .navbar .homenav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-
   section h1 {
     font-size: 1.5rem;
   }
@@ -418,10 +406,41 @@ img {
   }
 }
 
-/* Computer  */
+@media (max-width: 930px) {
+  .navbar {
+    position: relative;
+    margin-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-des {
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 15rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  section#significance ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Computer */
 @media (min-width: 1000px) {
-  section .text h1 {
-    font-size: 4rem;
+  /* Section  */
+  section h1 {
+    font-size: 2rem;
+  }
+
+  section p {
+    font-size: 1rem;
   }
 
   section .text {
@@ -430,16 +449,16 @@ img {
     font-size: 2rem;
   }
 
-  section .img {
+  section .img img {
     max-width: 500px;
   }
-
+  /* Description */
   section#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-
+  /* Main Building */
   section#main {
     display: flex;
     flex-direction: row;
@@ -447,18 +466,23 @@ img {
     padding: 50px;
   }
 
+  /* Nortwing */
   section#northwing {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
   }
+
+  /* Facilities */
   section#facilities {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px;
   }
+
+  /* Analysis */
   section#analysis {
     display: flex;
     flex-direction: row;
