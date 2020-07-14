@@ -12,8 +12,7 @@ html {
 
 /* Define colours */
 :root {
-  --primary-color: #c72727;
-  --secondary-color: #d3ab9e;
+  --primary-color: #d3ab9e;
   --light-color: #f2f2f2;
   --dark-color: #333;
   --max-width: 1100px;
@@ -46,6 +45,26 @@ mark {
 
 .list ul li {
   padding-left: 1rem;
+}
+
+/* Buttons */
+section .button {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+}
+
+section .button a {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+section .button a:hover {
+  background-color: var(--dark-color);
+  color: antiquewhite;
 }
 
 /* Navigation  */
@@ -82,7 +101,7 @@ mark {
 }
 
 .navbar ul li a:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .navbar ul li a:visited {
@@ -102,7 +121,7 @@ mark {
 
 .logo a:hover {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .logo a:visited {
@@ -177,27 +196,6 @@ section#home {
   background-size: cover;
 }
 
-section#home .main button {
-  margin-top: 1rem;
-}
-
-section#home .button {
-  margin-top: 2rem;
-}
-
-section#home .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-
-section#home .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
 
 /* Section History */
 section#history {
@@ -206,23 +204,6 @@ section#history {
   background-size: cover;
 }
 
-section#history .button {
-  margin-top: 2rem;
-}
-
-section#history .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-
-section#history .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
 
 /* Section Significance */
 section#significance {
@@ -245,29 +226,11 @@ section#significance ul li {
   margin: 1rem;
 }
 
-
 /* Section Photo */
 section#photo {
   background-image: url("/img/churchill-house-47.jpg");
 }
 
-section#photo .button {
-  margin-top: 2rem;
-}
-
-section#photo .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-
-section#photo .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
 
 /* Section Footer */
 section#footer {
@@ -326,16 +289,15 @@ section#analysis .text ul {
 }
 
 
-
 /* Responsive Phone */
 @media (max-width: 690px) {
 
   /* Navigation */
   .navbar {
     position: relative;
-    margin-bottom: 2rem;
     justify-content: center;
     align-items: center;
+    height: 5vh;
   }
 
   .navbar ul {
@@ -402,7 +364,7 @@ section#analysis .text ul {
   }
 
   /* Button - index.html */
-  .button {
+  section .button {
     font-size: 0.5rem;
   }
 
