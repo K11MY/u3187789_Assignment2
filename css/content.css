@@ -44,7 +44,7 @@
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 0.5rem;
 }
@@ -106,7 +106,7 @@
 
 .column-left ul {
   margin-left: 2rem;
-  padding-left: ;
+  padding-left: 1rem;
   list-style-type: "→";
 }
 
@@ -162,6 +162,7 @@
   width: 100%;
   height: 400px;
 }
+
 
 /* Media Query aimed at mobile devices */
 @media (max-width: 900px) {

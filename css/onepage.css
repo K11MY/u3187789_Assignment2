@@ -67,6 +67,7 @@ section .button a:hover {
   color: antiquewhite;
 }
 
+
 /* Navigation  */
 .navbar {
   top: 0;
@@ -76,7 +77,6 @@ section .button a:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 0.5vh;
   background-color: var(--light-color);
   opacity: 0.7;
 }
@@ -297,7 +297,6 @@ section#analysis .text ul {
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 5vh;
   }
 
   .navbar ul {
