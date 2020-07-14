@@ -1,13 +1,16 @@
+/* Remove default padding and margin and set box-sing and font-family */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
+/* Define colours */
 :root {
   --primary-color: #c72727;
   --secondary-color: #d3ab9e;
@@ -17,11 +20,11 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--light-color);
   line-height: 1.6;
 }
 
+/* Wrapper to keep content in */
 .container {
   /* Takes up whole body */
   width: 100%;
@@ -29,8 +32,23 @@ body {
   /* Smooth scroll properties */
 }
 
-/* Navigation  */
+/* Highlighter */
+mark {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
 
+/* List items  styling */
+.list ul {
+  margin-left: 2rem;
+  list-style-type: "→";
+}
+
+.list ul li {
+  padding-left: 1rem;
+}
+
+/* Navigation  */
 .navbar {
   top: 0;
   position: fixed;
@@ -44,6 +62,7 @@ body {
   opacity: 0.7;
 }
 
+/* Navbar list styling */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -65,11 +84,12 @@ body {
 .navbar ul li a:hover {
   background-color: var(--secondary-color);
 }
+
 .navbar ul li a:visited {
   color: var(--dark-color);
 }
 
-/* Navigation Logo  */
+/* Navbar Logo  */
 .logo {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -89,188 +109,7 @@ body {
   color: var(--dark-color);
 }
 
-/* General Section */
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-}
-
-section h1 {
-  font-size: 4rem;
-}
-
-section p {
-  font-size: 1.5rem;
-  color: white;
-}
-section ul li {
-  list-style-type: "→";
-  padding-left: 0.5rem;
-}
-/* Section Landing */
-section#landing {
-  background-color: var(--light-color);
-}
-
-section#landing p {
-  color: var(--dark-color);
-  padding: 10px;
-}
-/* Section Home */
-section#home {
-  background-image: url("/img/churchill-house-39.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-section#home .main button {
-  margin-top: 1rem;
-}
-
-section#home .button {
-  margin-top: 2rem;
-}
-section#home .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-
-section#home .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
-/* Section History */
-section#history {
-  background-image: url("/img/churchill-house-24.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-section#history .button {
-  margin-top: 2rem;
-}
-section#history .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-section#history .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
-
-/* Section Significance */
-section#significance {
-  background-image: url("/img/churchill-house-29.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-section#significance ul {
-  list-style-type: "→";
-  font-size: 1.5rem;
-  margin-top: 1rem;
-}
-section#significance ul {
-  color: white;
-}
-section#significance ul li {
-  margin: 1rem;
-}
-/* List items in significance */
-.list ul {
-  margin-left: 2rem;
-  list-style-type: "→";
-}
-.list ul li {
-  padding-left: 1rem;
-}
-
-/* Section Photo */
-section#photo {
-  background-image: url("/img/churchill-house-47.jpg");
-}
-section#photo .button {
-  margin-top: 2rem;
-}
-section#photo .button a {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
-  padding: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 0.5rem;
-}
-section#photo .button a:hover {
-  background-color: var(--dark-color);
-  color: antiquewhite;
-}
-mark {
-  background-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* Section Footer */
-section#footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background-color: var(--light-color);
-}
-
-/*  Description Page */
-section .text p {
-  color: var(--dark-color);
-  text-align: left;
-}
-
-section .text h1 {
-  color: var(--dark-color);
-  text-align: left;
-}
-
-section#description {
-  background-color: #efe5dc;
-}
-
-section#main {
-  background-color: #d0b8ac;
-}
-
-section#northwing {
-  background-color: #f3d8c7;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-section#facilities {
-  background-color: #efe5dc;
-}
-
-section#analysis {
-  background-color: #fbfefb;
-}
-section#analysis .text ul {
-  font-size: 1.5rem;
-  padding-left: 2.5rem;
-  text-align: left;
-}
-
-img {
-  margin: 1rem;
-}
-
-/* Back to Top  */
+/* Back to Top Button */
 .to-top {
   background: var(--light-color);
   position: fixed;
@@ -296,8 +135,201 @@ img {
   opacity: 1;
 }
 
+/* General Section */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+section ul li {
+  list-style-type: "→";
+  padding-left: 0.5rem;
+}
+
+/* Section Landing */
+section#landing {
+  background-color: var(--light-color);
+}
+
+section#landing p {
+  color: var(--dark-color);
+  padding: 10px;
+}
+
+/* Section Home */
+section#home {
+  background-image: url("/img/churchill-house-39.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#home .main button {
+  margin-top: 1rem;
+}
+
+section#home .button {
+  margin-top: 2rem;
+}
+
+section#home .button a {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+section#home .button a:hover {
+  background-color: var(--dark-color);
+  color: antiquewhite;
+}
+
+/* Section History */
+section#history {
+  background-image: url("/img/churchill-house-24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#history .button {
+  margin-top: 2rem;
+}
+
+section#history .button a {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+section#history .button a:hover {
+  background-color: var(--dark-color);
+  color: antiquewhite;
+}
+
+/* Section Significance */
+section#significance {
+  background-image: url("/img/churchill-house-29.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#significance ul {
+  list-style-type: "→";
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+section#significance ul {
+  color: white;
+}
+
+section#significance ul li {
+  margin: 1rem;
+}
+
+
+/* Section Photo */
+section#photo {
+  background-image: url("/img/churchill-house-47.jpg");
+}
+
+section#photo .button {
+  margin-top: 2rem;
+}
+
+section#photo .button a {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+}
+
+section#photo .button a:hover {
+  background-color: var(--dark-color);
+  color: antiquewhite;
+}
+
+/* Section Footer */
+section#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--light-color);
+}
+
+/*  Description.html Page */
+section .text p {
+  color: var(--dark-color);
+  text-align: left;
+}
+
+section .text h1 {
+  color: var(--dark-color);
+  text-align: left;
+}
+
+/* Description.html page css */
+img {
+  margin: 1rem;
+}
+
+/* Description Section */
+section#description {
+  background-color: #efe5dc;
+}
+
+/* Main Building Section */
+section#main {
+  background-color: #d0b8ac;
+}
+
+/* Northwing Section */
+section#northwing {
+  background-color: #f3d8c7;
+
+}
+
+/* Facilities Section */
+section#facilities {
+  background-color: #efe5dc;
+}
+
+/* Analysis Section */
+section#analysis {
+  background-color: #fbfefb;
+}
+
+section#analysis .text ul {
+  font-size: 1.5rem;
+  padding-left: 2.5rem;
+  text-align: left;
+}
+
+
+
 /* Responsive Phone */
 @media (max-width: 690px) {
+
   /* Navigation */
   .navbar {
     position: relative;
@@ -305,12 +337,15 @@ img {
     justify-content: center;
     align-items: center;
   }
+
   .navbar ul {
     flex-direction: column;
   }
+
   .logo {
     display: none;
   }
+
   /* Nav Description */
   .navbar .nav-des {
     height: 100vh;
@@ -340,6 +375,7 @@ img {
   section h1 {
     font-size: 1.5rem;
   }
+
   section p {
     font-size: 0.7rem;
     color: white;
@@ -365,11 +401,12 @@ img {
     max-width: 300px;
   }
 
+  /* Button - index.html */
   .button {
     font-size: 0.5rem;
   }
 
-  /* Footer Image */
+  /* Footer Image - index.html */
   .caption img {
     width: 250px;
     height: 100px;
@@ -385,8 +422,8 @@ img {
     padding: 10px;
   }
 
-  .navbar .nav-des .logo{
-    display:none ;
+  .navbar .nav-des .logo {
+    display: none;
   }
 
 
@@ -419,6 +456,7 @@ img {
   .navbar ul {
     flex-direction: row;
   }
+
   section#significance ul li {
     font-size: 1rem;
   }
@@ -426,6 +464,7 @@ img {
 
 /* Computer */
 @media (min-width: 1000px) {
+
   /* Section  */
   section h1 {
     font-size: 2rem;
@@ -444,12 +483,14 @@ img {
   section .img img {
     max-width: 500px;
   }
+
   /* Description */
   section#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
   /* Main Building */
   section#main {
     display: flex;

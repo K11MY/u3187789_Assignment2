@@ -1,4 +1,4 @@
-/* Other */
+/* Define Colours */
 :root {
   --primary-color: #c72727;
   --secondary-color: #d3ab9e;
@@ -7,6 +7,7 @@
   --max-width: 1100px;
 }
 
+/* Remove all default settings and set box-sizing and font family */
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Utilities */
 .title {
   padding: 0.5rem;
   margin-bottom: 2rem;
@@ -29,6 +31,16 @@
   background-color: var(--light-color);
 }
 
+/* List styling */
+.list ul {
+  margin-left: 2rem;
+  list-style-type: "→";
+}
+
+.list ul li {
+  padding-left: 1rem;
+}
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -38,6 +50,7 @@
   padding-bottom: 0.5rem;
 }
 
+/* Navbar list items styling */
 .navbar ul {
   display: flex;
   list-style: none;
@@ -54,6 +67,7 @@
   text-transform: uppercase;
   color: var(--dark-color);
 }
+
 .navbar ul li a:visited {
   color: var(--dark-color);
 }
@@ -62,6 +76,7 @@
   color: var(--secondary-color);
 }
 
+/* Navbar Logo Styling */
 .logo {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -76,6 +91,7 @@
   text-decoration: none;
   color: var(--dark-color);
 }
+
 .logo a:visited {
   color: var(--dark-color);
 }
@@ -111,7 +127,7 @@
   margin: 1rem;
 }
 
-/* Parrallax for Robin Boyd Page */
+/* Parallax effect styling for Robin Boyd Page */
 .parallax-1 {
   background: url(../img/robin.jpg) no-repeat center;
   background-size: cover;
@@ -125,19 +141,14 @@
   background-attachment: fixed;
   height: 300px;
 }
+
 .parallax-3 {
   background: url(../img/churchill-house-13.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   height: 300px;
 }
-.list ul {
-  margin-left: 2rem;
-  list-style-type: "→";
-}
-.list ul li {
-  padding-left: 1rem;
-}
+
 /* Photo Gallery Page */
 .picture-grid {
   display: grid;
@@ -147,6 +158,7 @@
   grid-row-gap: 0px;
 }
 
+/* Image styling */
 .grid-box img {
   width: 100%;
   height: 400px;
@@ -158,6 +170,7 @@
     position: relative;
     padding-top: 4rem;
   }
+
   .navbar {
     position: fixed;
     top: 0em;
@@ -165,17 +178,22 @@
     opacity: 0.75;
     min-height: 0.5vh;
   }
+
+  /* Change flex direction to column to fit all content */
   .row {
     flex-direction: column;
   }
+
   .column-left {
     width: 100%;
   }
+
   .column-right {
     align-self: self;
     width: 100%;
     justify-content: center;
   }
+
   .column-right img {
     width: 300px;
     height: 300px;
