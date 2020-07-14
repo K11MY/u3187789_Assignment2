@@ -53,3 +53,15 @@ I think next time I really should have a good think about it before even startin
 Also, YouTube is literally the best for guides. I felt so exposed to the front-end web world and how fun it actually is. I really did enjoy doing this assignment and learnt a new skill! I am motivated to continue learning more about web applications and hopefully get into some full stack web development! IMO: I think it was really fun and a field I would love to get into and explore more of it. There is so many resources online for me to continue this journey. :)
 
 Thank you for listening to my ted talk - u3187789
+
+### Shout Outs (References)
+
+I would like to thank:
+
+- Brad Traversy, Grid: https://www.youtube.com/watch?v=jV8B24rSN5o
+- DevEd Responsive Nav Bar: https://www.youtube.com/watch?v=gXkqy0b4M5g
+- GT Coding Back to top: https://www.youtube.com/watch?v=SJVCvnKM_lI
+
+And most importantly W3School - you are the wikipedia (except we are allowed to reference you as a resource in uni)
+
+oh and also the Unit Convenor!
