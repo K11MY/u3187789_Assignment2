@@ -2,6 +2,8 @@
 
 ### DISCLAIMER: I tried to make this reflection fun to write :)
 
+netlify link to the web page if you don't feel like cloning and taking space up on your device: https://condescending-pike-aef1d5.netlify.app/#
+
 ## Reflection
 
 ### (Insert Mulan Reflection for background music)
@@ -40,7 +42,7 @@ I was constantly testing on all different devices and sometimes I would get conf
 
 #### Solution
 
-From a little bit of background knowledge, I decided to deploy this webpage on netlify so I could access it on my phone and iPad. This will then give me real experience with how the website functions rather than seeing it through the computer screen (and hoping for the best). Through this deployment I was able to send link to friends for them to see and do continues deployment for all the changed I made. I was also able to visually see how my website was functioning on the mobile devices which gave me a great insight on what needed improving and what looks good. 
+From a little bit of background knowledge, I decided to deploy this webpage on netlify so I could access it on my phone and iPad. This will then give me real experience with how the website functions rather than seeing it through the computer screen (and hoping for the best). Through this deployment I was able to send link to friends for them to see and do continues deployment for all the changed I made. I was also able to visually see how my website was functioning on the mobile devices which gave me a great insight on what needed improving and what looks good.
 
 I was really happy when I did this it just made my life a bit easier.
 
@@ -51,4 +53,3 @@ I think next time I really should have a good think about it before even startin
 Also, YouTube is literally the best for guides. I felt so exposed to the front-end web world and how fun it actually is. I really did enjoy doing this assignment and learnt a new skill! I am motivated to continue learning more about web applications and hopefully get into some full stack web development! IMO: I think it was really fun and a field I would love to get into and explore more of it. There is so many resources online for me to continue this journey. :)
 
 Thank you for listening to my ted talk - u3187789
-
