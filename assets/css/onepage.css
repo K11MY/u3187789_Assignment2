@@ -6,6 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Smooth scroll property */
 html {
   scroll-behavior: smooth;
 }
@@ -354,6 +355,7 @@ section#analysis .text ul {
     background-color: var(--light-color);
     width: 100%;
     justify-content: center;
+    align-items: center;
     height: 5vh;
   }
 
@@ -378,8 +380,6 @@ section#analysis .text ul {
   }
 
   section {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
