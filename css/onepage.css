@@ -53,6 +53,7 @@ section .button {
   font-size: 0.75rem;
 }
 
+/* Give button styling properties */
 section .button a {
   background-color: var(--primary-color);
   color: var(--dark-color);
@@ -62,13 +63,19 @@ section .button a {
   border-radius: 0.5rem;
 }
 
+/* Give button different hover colour */
 section .button a:hover {
   background-color: var(--dark-color);
   color: antiquewhite;
 }
 
 
-/* Navigation  */
+/* Navigation
+  - fixed to the top 
+  - display flex for easier responsiveness 
+  - navigation bar will alway fix to the top when user scrolls 
+  - See through so users can see content behind the nav bar 
+*/
 .navbar {
   top: 0;
   position: fixed;
@@ -87,6 +94,7 @@ section .button a:hover {
   list-style: none;
 }
 
+/* Remove bullet points  */
 .navbar ul li {
   text-decoration: none;
   margin: 0 0.5rem;
@@ -94,16 +102,19 @@ section .button a:hover {
   font-weight: bolder;
 }
 
+/* list item styling for links */
 .navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark-color);
 }
 
+/* Change list item link hover colour */
 .navbar ul li a:hover {
   background-color: var(--primary-color);
 }
 
+/* Change visited colour */
 .navbar ul li a:visited {
   color: var(--dark-color);
 }
@@ -114,11 +125,13 @@ section .button a:hover {
   letter-spacing: 0.5rem;
 }
 
+/* Remove underline and change colour */
 .logo a {
   text-decoration: none;
   color: var(--dark-color);
 }
 
+/* Change hover colour */
 .logo a:hover {
   text-decoration: none;
   color: var(--primary-color);
@@ -128,7 +141,12 @@ section .button a:hover {
   color: var(--dark-color);
 }
 
-/* Back to Top Button */
+/* Back to Top Button
+ - position is fixed to the bottom right hand corner 
+ - circle border rather than square 
+ - align items in the centre of the circle 
+ - remove text decoration 
+*/
 .to-top {
   background: var(--light-color);
   position: fixed;
@@ -174,6 +192,7 @@ section p {
   color: white;
 }
 
+/* Custom list styling */
 section ul li {
   list-style-type: "→";
   padding-left: 0.5rem;
@@ -303,15 +322,19 @@ section#analysis .text ul {
     align-items: center;
   }
 
+  /* Change direction to column */
   .navbar ul {
     flex-direction: column;
   }
 
+  /* Logo took up too much space so do not display it */
   .logo {
     display: none;
   }
 
-  /* Nav Description */
+  /* Nav Description 
+   - User will see a full page navigation menu 
+  */
   .navbar .nav-des {
     height: 100vh;
     justify-content: center;
