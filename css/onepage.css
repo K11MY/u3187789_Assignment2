@@ -146,6 +146,7 @@ section .button a:hover {
  - circle border rather than square 
  - align items in the centre of the circle 
  - remove text decoration 
+ - remove pointer 
 */
 .to-top {
   background: var(--light-color);
@@ -165,6 +166,7 @@ section .button a:hover {
   pointer-events: none;
   transition: all 0.4s;
 }
+
 
 .to-top.active {
   bottom: 2rem;
@@ -208,7 +210,11 @@ section#landing p {
   padding: 10px;
 }
 
-/* Section Home */
+/* Section Home 
+ - set background image 
+ - ensure the image is not repeated 
+ - ensure the image covers the whole section
+*/
 section#home {
   background-image: url("/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
@@ -216,7 +222,7 @@ section#home {
 }
 
 
-/* Section History */
+/* Section History  - same as section home */
 section#history {
   background-image: url("/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
@@ -224,7 +230,7 @@ section#history {
 }
 
 
-/* Section Significance */
+/* Section Significance - same as section home */
 section#significance {
   background-image: url("/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
@@ -305,6 +311,7 @@ section#analysis {
   background-color: #fbfefb;
 }
 
+/* Padding-left: make space between the list item and list icon */
 section#analysis .text ul {
   font-size: 1.5rem;
   padding-left: 2.5rem;
@@ -403,17 +410,19 @@ section#analysis .text ul {
 
 /* Tablets */
 @media (min-width: 700px) {
+
+  /* Do not display logo */
+  .navbar .nav-des .logo {
+    display: none;
+  }
+
+  /* Set all the section to have these default values below */
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px;
   }
-
-  .navbar .nav-des .logo {
-    display: none;
-  }
-
 
   section h1 {
     font-size: 1.5rem;
@@ -433,6 +442,7 @@ section#analysis .text ul {
 }
 
 @media (min-width: 930px) {
+
   .navbar {
     position: relative;
     margin-bottom: 2rem;
@@ -472,14 +482,17 @@ section#analysis .text ul {
     max-width: 500px;
   }
 
-  /* Description */
+  /* Description - change the flex direction to row so it fits nicely on the page 
+   - Padding around text so it looks more spacious on the page rather than stuck to the edges
+  */
   section#description {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 50px
   }
 
-  /* Main Building */
+  /* Main Building - same as description ^ */
   section#main {
     display: flex;
     flex-direction: row;
@@ -487,7 +500,7 @@ section#analysis .text ul {
     padding: 50px;
   }
 
-  /* Nortwing */
+  /* Nortwing same as description ^ */
   section#northwing {
     display: flex;
     flex-direction: row;
@@ -495,7 +508,7 @@ section#analysis .text ul {
     padding: 50px;
   }
 
-  /* Facilities */
+  /* Facilities same as description ^ */
   section#facilities {
     display: flex;
     flex-direction: row;
@@ -503,7 +516,7 @@ section#analysis .text ul {
     padding: 50px;
   }
 
-  /* Analysis */
+  /* Analysis same as description ^ */
   section#analysis {
     display: flex;
     flex-direction: row;
