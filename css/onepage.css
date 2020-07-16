@@ -240,6 +240,10 @@ section#footer {
   background-color: var(--light-color);
 }
 
+section#footer img {
+  width: 500px;
+}
+
 /*  Description.html Page */
 section .text p {
   color: var(--dark-color);
