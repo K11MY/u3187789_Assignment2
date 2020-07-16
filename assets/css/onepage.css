@@ -415,11 +415,11 @@ section#analysis .text ul {
     padding: 10px;
   }
 
-  <<<<<<< HEAD:css/onepage.css=======.navbar .nav-des .logo {
+  .navbar .nav-des .logo {
     display: none;
   }
 
-  >>>>>>>caf8aeb07960df2c23460ca4e3034c1fa2450edd:assets/css/onepage.css section h1 {
+  section h1 {
     font-size: 1.5rem;
   }
 
