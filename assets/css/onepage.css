@@ -128,7 +128,7 @@ section .button a:hover {
 }
 
 /* Change hover colour */
-.logo a:hover {
+nav .logo a:hover {
   text-decoration: none;
   color: var(--primary-color);
 }

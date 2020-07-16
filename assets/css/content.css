@@ -45,46 +45,44 @@
 .navbar {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-bottom: 0.5rem;
 }
 
-/* Navbar list items styling */
-.navbar ul {
-  display: flex;
-  list-style: none;
-}
-
-.navbar ul li {
+/* General navigation properties */
+nav ul li {
   text-decoration: none;
   margin: 0 0.5rem;
   padding: 1rem;
+  list-style: none;
 }
 
-.navbar ul li a {
+
+nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--dark-color);
 }
 
-.navbar ul li a:visited {
+nav ul li a:visited {
   color: var(--dark-color);
 }
 
-.navbar ul li a:hover {
+nav ul li a:hover {
   color: var(--primary-color);
 }
 
 /* Navbar Logo Styling */
+
+nav .logo a:hover {
+  color: var(--primary-color);
+}
+
 .logo {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: var(--dark-color);
-}
-
-.logo a:hover {
-  color: var(--primary-color);
 }
 
 .logo a {
