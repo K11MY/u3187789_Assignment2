@@ -70,12 +70,7 @@ section .button a:hover {
 }
 
 
-/* Navigation
-  - fixed to the top 
-  - display flex for easier responsiveness 
-  - navigation bar will alway fix to the top when user scrolls 
-  - See through so users can see content behind the nav bar 
-*/
+/* Navigation  */
 .navbar {
   top: 0;
   position: fixed;
@@ -216,23 +211,22 @@ section#landing p {
  - ensure the image covers the whole section
 */
 section#home {
-  background-image: url("/img/churchill-house-39.jpg");
+  background-image: url("/assets/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-/* Section History  - same as section home */
 section#history {
-  background-image: url("/img/churchill-house-24.jpg");
+  /* Section History */
+  background-image: url("/assets/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-/* Section Significance - same as section home */
+/* Section Significance */
 section#significance {
-  background-image: url("/img/churchill-house-29.jpg");
+  background-image: url("/assets/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -253,9 +247,8 @@ section#significance ul li {
 
 /* Section Photo */
 section#photo {
-  background-image: url("/img/churchill-house-47.jpg");
+  background-image: url("/assets/img/churchill-house-47.jpg");
 }
-
 
 /* Section Footer */
 section#footer {
@@ -298,7 +291,6 @@ section#main {
 /* Northwing Section */
 section#northwing {
   background-color: #f3d8c7;
-
 }
 
 /* Facilities Section */
@@ -317,7 +309,6 @@ section#analysis .text ul {
   padding-left: 2.5rem;
   text-align: left;
 }
-
 
 /* Responsive Phone */
 @media (max-width: 690px) {
@@ -424,7 +415,11 @@ section#analysis .text ul {
     padding: 10px;
   }
 
-  section h1 {
+  <<<<<<< HEAD:css/onepage.css=======.navbar .nav-des .logo {
+    display: none;
+  }
+
+  >>>>>>>caf8aeb07960df2c23460ca4e3034c1fa2450edd:assets/css/onepage.css section h1 {
     font-size: 1.5rem;
   }
 
@@ -482,45 +477,10 @@ section#analysis .text ul {
     max-width: 500px;
   }
 
-  /* Description - change the flex direction to row so it fits nicely on the page 
-   - Padding around text so it looks more spacious on the page rather than stuck to the edges
-  */
-  section#description {
+  .main-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 50px
-  }
-
-  /* Main Building - same as description ^ */
-  section#main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
-  }
-
-  /* Nortwing same as description ^ */
-  section#northwing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
-  }
-
-  /* Facilities same as description ^ */
-  section#facilities {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
-  }
-
-  /* Analysis same as description ^ */
-  section#analysis {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
   }
 }
