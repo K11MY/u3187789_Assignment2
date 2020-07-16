@@ -163,7 +163,6 @@
   height: 400px;
 }
 
-
 /* Media Query aimed at mobile devices */
 @media (max-width: 900px) {
   .container {

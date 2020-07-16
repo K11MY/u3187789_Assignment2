@@ -67,7 +67,6 @@ section .button a:hover {
   color: antiquewhite;
 }
 
-
 /* Navigation  */
 .navbar {
   top: 0;
@@ -191,23 +190,21 @@ section#landing p {
 
 /* Section Home */
 section#home {
-  background-image: url("/img/churchill-house-39.jpg");
+  background-image: url("/assets/img/churchill-house-39.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 /* Section History */
 section#history {
-  background-image: url("/img/churchill-house-24.jpg");
+  background-image: url("/assets/img/churchill-house-24.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 /* Section Significance */
 section#significance {
-  background-image: url("/img/churchill-house-29.jpg");
+  background-image: url("/assets/img/churchill-house-29.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -228,9 +225,8 @@ section#significance ul li {
 
 /* Section Photo */
 section#photo {
-  background-image: url("/img/churchill-house-47.jpg");
+  background-image: url("/assets/img/churchill-house-47.jpg");
 }
-
 
 /* Section Footer */
 section#footer {
@@ -273,7 +269,6 @@ section#main {
 /* Northwing Section */
 section#northwing {
   background-color: #f3d8c7;
-
 }
 
 /* Facilities Section */
@@ -292,10 +287,8 @@ section#analysis .text ul {
   text-align: left;
 }
 
-
 /* Responsive Phone */
 @media (max-width: 690px) {
-
   /* Navigation */
   .navbar {
     position: relative;
@@ -391,7 +384,6 @@ section#analysis .text ul {
     display: none;
   }
 
-
   section h1 {
     font-size: 1.5rem;
   }
@@ -429,7 +421,6 @@ section#analysis .text ul {
 
 /* Computer */
 @media (min-width: 1000px) {
-
   /* Section  */
   section h1 {
     font-size: 2rem;
