@@ -2,7 +2,7 @@
 
 ### DISCLAIMER: I tried to make this reflection fun to write :)
 
-netlify link to the web page if you don't feel like cloning and taking space up on your device: https://condescending-pike-aef1d5.netlify.app/#
+netlify link to the web page if you don't feel like cloning and taking space up on your device: https://u3187789churchill.netlify.app/
 
 ## Reflection
 
