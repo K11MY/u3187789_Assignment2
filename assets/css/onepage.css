@@ -68,8 +68,8 @@ section .button a {
 section .button a:hover {
   background-color: var(--dark-color);
   color: antiquewhite;
+  transition: 0.5s;
 }
-
 
 /* Navigation  */
 .navbar {
@@ -108,6 +108,7 @@ section .button a:hover {
 /* Change list item link hover colour */
 .navbar ul li a:hover {
   background-color: var(--primary-color);
+  transition: 0.5s;
 }
 
 /* Change visited colour */
@@ -131,6 +132,8 @@ section .button a:hover {
 nav .logo a:hover {
   text-decoration: none;
   color: var(--primary-color);
+  transition: 0.5s;
+
 }
 
 .logo a:visited {
@@ -163,7 +166,6 @@ nav .logo a:hover {
   transition: all 0.4s;
 }
 
-
 .to-top.active {
   bottom: 2rem;
   pointer-events: auto;
@@ -193,6 +195,7 @@ section h1 {
 section p {
   font-size: 1.5rem;
   color: white;
+  padding: 1rem;
 }
 
 /* Custom list styling */
@@ -202,13 +205,9 @@ section ul li {
 }
 
 /* Section Landing */
-section#landing {
-  background-color: var(--light-color);
-}
-
 section#landing p {
   color: var(--dark-color);
-  padding: 10px;
+  padding: 1rem;
 }
 
 /* Section Home 
@@ -216,7 +215,6 @@ section#landing p {
 */
 section#home {
   background-image: url("/assets/img/churchill-house-39.jpg");
-
 }
 
 /* Section History
@@ -225,7 +223,6 @@ Same as home section
 section#history {
   background-image: url("/assets/img/churchill-house-24.jpg");
 }
-
 
 /* Section Significance 
 Same as home section
@@ -237,15 +234,13 @@ section#significance {
 section#significance ul {
   list-style-type: "→";
   font-size: 1.5rem;
-  margin-top: 1rem;
+  color: white;
+
 }
 
-section#significance ul {
-  color: white;
-}
 
 section#significance ul li {
-  margin: 1rem;
+  margin: 0.4rem;
 }
 
 /* Section Photo
@@ -256,13 +251,12 @@ section#photo {
 }
 
 /* Section Footer 
-Same as home section
+Display the content evenly in a column format
 */
 section#footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: var(--light-color);
 }
 
 section#footer img {
@@ -443,7 +437,6 @@ section#analysis .text ul {
 }
 
 @media (min-width: 930px) {
-
   section#significance ul li {
     font-size: 1rem;
   }
@@ -475,6 +468,6 @@ section#analysis .text ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 50px
+    padding: 50px;
   }
 }

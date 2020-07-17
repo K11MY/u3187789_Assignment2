@@ -71,12 +71,14 @@ nav ul li a:visited {
 
 nav ul li a:hover {
   color: var(--primary-color);
+  transition: 0.5s;
 }
 
 /* Navbar Logo Styling */
 
 nav .logo a:hover {
   color: var(--primary-color);
+  transition: 0.5s;
 }
 
 .logo {
